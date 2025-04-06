@@ -2,6 +2,10 @@
 #
 .DS_Store
 
+# vscode
+#
+.vscode
+
 # Xcode
 #
 build/
@@ -72,3 +76,8 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# codepush
+/dist
+fileToIdMap.txt
+android/app/src/main/assets/bundles/*

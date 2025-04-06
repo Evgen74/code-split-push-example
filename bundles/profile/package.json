@@ -1,0 +1,16 @@
+{
+  "name": "@code-push/profile",
+  "version": "1.0.7",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "peerDependencies": {
+    "mobx": "*",
+    "mobx-react-lite": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-unistyles": "*"
+  },
+  "files": [
+    "src"
+  ]
+}

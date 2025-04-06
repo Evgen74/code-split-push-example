@@ -13,6 +13,9 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		67026FB8C6B9BCF28327CB91 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1625653A859027510747CC0C /* PrivacyInfo.xcprivacy */; };
+		6C4589572DA1B4EC007841A5 /* meta.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C4589562DA1B4EC007841A5 /* meta.json */; };
+		6C4589592DA1BF90007841A5 /* bundles in Resources */ = {isa = PBXBuildFile; fileRef = 6C4589582DA1BF90007841A5 /* bundles */; };
+		6CC674D92DA11E1F002CDFD5 /* bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC674D82DA11E16002CDFD5 /* bridge.swift */; };
 		7699B88040F8A987B510C191 /* libPods-codeSplitPush-codeSplitPushTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-codeSplitPush-codeSplitPushTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -38,12 +41,24 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = codeSplitPush/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = codeSplitPush/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = codeSplitPush/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		1625653A859027510747CC0C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = codeSplitPush/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1625653A859027510747CC0C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = codeSplitPush/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-codeSplitPush-codeSplitPushTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-codeSplitPush-codeSplitPushTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-codeSplitPush.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codeSplitPush.debug.xcconfig"; path = "Target Support Files/Pods-codeSplitPush/Pods-codeSplitPush.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-codeSplitPush.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codeSplitPush.release.xcconfig"; path = "Target Support Files/Pods-codeSplitPush/Pods-codeSplitPush.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-codeSplitPush-codeSplitPushTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codeSplitPush-codeSplitPushTests.debug.xcconfig"; path = "Target Support Files/Pods-codeSplitPush-codeSplitPushTests/Pods-codeSplitPush-codeSplitPushTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-codeSplitPush.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-codeSplitPush.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C45894D2DA1AB4D007841A5 /* CodePush.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CodePush.mm; sourceTree = "<group>"; };
+		6C45894E2DA1AB4D007841A5 /* CodePush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePush.swift; sourceTree = "<group>"; };
+		6C45894F2DA1AB4D007841A5 /* CodePush-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodePush-Bridging-Header.h"; sourceTree = "<group>"; };
+		6C4589502DA1AB4D007841A5 /* CodePushProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodePushProvider.h; sourceTree = "<group>"; };
+		6C4589512DA1AB4D007841A5 /* CodePushProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePushProvider.swift; sourceTree = "<group>"; };
+		6C4589522DA1AB4D007841A5 /* CPDiskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPDiskManager.swift; sourceTree = "<group>"; };
+		6C4589532DA1AB4D007841A5 /* Execute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Execute.h; sourceTree = "<group>"; };
+		6C4589542DA1AB4D007841A5 /* Execute.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Execute.mm; sourceTree = "<group>"; };
+		6C4589562DA1B4EC007841A5 /* meta.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = meta.json; path = ../dist/meta.json; sourceTree = "<group>"; };
+		6C4589582DA1BF90007841A5 /* bundles */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bundles; path = ../dist/bundles; sourceTree = "<group>"; };
+		6CC674D82DA11E16002CDFD5 /* bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bridge.swift; sourceTree = "<group>"; };
+		6CC674DA2DA11E27002CDFD5 /* codeSplitPush-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "codeSplitPush-Bridging-Header.h"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = codeSplitPush/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-codeSplitPush-codeSplitPushTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codeSplitPush-codeSplitPushTests.release.xcconfig"; path = "Target Support Files/Pods-codeSplitPush-codeSplitPushTests/Pods-codeSplitPush-codeSplitPushTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -89,6 +104,7 @@
 		13B07FAE1A68108700A75B9A /* codeSplitPush */ = {
 			isa = PBXGroup;
 			children = (
+				6CC674D82DA11E16002CDFD5 /* bridge.swift */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -97,6 +113,7 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 				1625653A859027510747CC0C /* PrivacyInfo.xcprivacy */,
+				6CC674DA2DA11E27002CDFD5 /* codeSplitPush-Bridging-Header.h */,
 			);
 			name = codeSplitPush;
 			sourceTree = "<group>";
@@ -111,9 +128,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6C4589552DA1AB4D007841A5 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				6C45894D2DA1AB4D007841A5 /* CodePush.mm */,
+				6C45894E2DA1AB4D007841A5 /* CodePush.swift */,
+				6C45894F2DA1AB4D007841A5 /* CodePush-Bridging-Header.h */,
+				6C4589502DA1AB4D007841A5 /* CodePushProvider.h */,
+				6C4589512DA1AB4D007841A5 /* CodePushProvider.swift */,
+				6C4589522DA1AB4D007841A5 /* CPDiskManager.swift */,
+				6C4589532DA1AB4D007841A5 /* Execute.h */,
+				6C4589542DA1AB4D007841A5 /* Execute.mm */,
+			);
+			name = ios;
+			path = "../modules/code-push/ios";
+			sourceTree = SOURCE_ROOT;
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				6C4589552DA1AB4D007841A5 /* ios */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -121,6 +155,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				6C4589582DA1BF90007841A5 /* bundles */,
+				6C4589562DA1B4EC007841A5 /* meta.json */,
 				13B07FAE1A68108700A75B9A /* codeSplitPush */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* codeSplitPushTests */,
@@ -185,7 +221,6 @@
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
-				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
 			);
@@ -211,7 +246,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1630;
 					};
 				};
 			};
@@ -248,6 +283,8 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				6C4589572DA1B4EC007841A5 /* meta.json in Resources */,
+				6C4589592DA1BF90007841A5 /* bundles in Resources */,
 				67026FB8C6B9BCF28327CB91 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,22 +292,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/.xcode.env.local",
-				"$(SRCROOT)/.xcode.env",
-			);
-			name = "Bundle React Native code and images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
-		};
 		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -398,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CC674D92DA11E1F002CDFD5 /* bridge.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -424,7 +446,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = codeSplitPushTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,7 +470,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = codeSplitPushTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,8 +506,10 @@
 					"-ObjC",
 					"-lc++",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -DDEBUG -D COCOAPODS -Xcc -fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/CodePush/CodePush.modulemap\" -Xcc -fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/ZIPFoundation/ZIPFoundation.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/DoubleConversion/DoubleConversion.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/RCTDeprecation/RCTDeprecation.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/RCTFabric/React-RCTFabric.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/RCTTypeSafety/RCTTypeSafety.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/RNReanimated/RNReanimated.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/React/React-Core.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/ReactCodegen/ReactCodegen.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/ReactCommon/ReactCommon.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/React_Fabric/React-Fabric.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/React_FabricComponents/React-FabricComponents.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/React_NativeModulesApple/React-NativeModulesApple.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/React_RCTAppDelegate/React-RCTAppDelegate.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/SSZipArchive/SSZipArchive.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/folly/RCT-Folly.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/glog/glog.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/jsi/React-jsi.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/jsinspector_modern/React-jsinspector.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/react_debug/React-debug.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/react_featureflags/React-featureflags.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/react_nativemodule_defaults/React-defaultsnativemodule.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/react_nativemodule_dom/React-domnativemodule.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/react_nativemodule_featureflags/React-featureflagsnativemodule.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/react_nativemodule_idlecallbacks/React-idlecallbacksnativemodule.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/react_nativemodule_microtasks/React-microtasksnativemodule.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/react_renderer_debug/React-rendererdebug.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/react_renderer_graphics/React-graphics.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/react_renderer_imagemanager/React-ImageManager.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/react_utils/React-utils.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/yoga/Yoga.modulemap\"";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = codeSplitPush;
+				SWIFT_OBJC_BRIDGING_HEADER = "codeSplitPush-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -512,6 +536,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = codeSplitPush;
+				SWIFT_OBJC_BRIDGING_HEADER = "codeSplitPush-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -568,7 +593,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD = "";
 				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -645,7 +670,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD = "";
 				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
