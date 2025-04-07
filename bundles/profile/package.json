@@ -1,6 +1,6 @@
 {
   "name": "@code-push/profile",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "src/index.ts",
   "license": "MIT",
   "peerDependencies": {
@@ -8,7 +8,8 @@
     "mobx-react-lite": "*",
     "react": "*",
     "react-native": "*",
-    "react-native-unistyles": "*"
+    "react-native-unistyles": "*",
+    "@code-push/shared": "*"
   },
   "files": [
     "src"

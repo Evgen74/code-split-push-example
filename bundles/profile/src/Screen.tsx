@@ -4,6 +4,7 @@ import { useStyles } from 'react-native-unistyles';
 import { stylesheet } from './style';
 import { observer } from 'mobx-react-lite';
 import { Profile } from './model';
+import { Component } from '@code-push/shared';
 
 const model = new Profile();
 
@@ -46,6 +47,7 @@ export const Screen = observer(() => {
       >
         <Text style={styles.buttonText}>Go to Settings</Text>
       </TouchableOpacity>
+      <Component/>
     </View>
   );
 });

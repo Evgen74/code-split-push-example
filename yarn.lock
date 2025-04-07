@@ -1538,37 +1538,37 @@ __metadata:
 
 "@code-push/code-push@file:./modules/code-push::locator=codeSplitPush%40workspace%3A.":
   version: 0.0.0
-  resolution: "@code-push/code-push@file:./modules/code-push#./modules/code-push::hash=0d7325&locator=codeSplitPush%40workspace%3A."
+  resolution: "@code-push/code-push@file:./modules/code-push#./modules/code-push::hash=a19727&locator=codeSplitPush%40workspace%3A."
   peerDependencies:
     react-native-fs: "*"
     react-native-zip-archive: "*"
-  checksum: 76ef9633bbdfbbd800e0d195852fc9248e8e91286a0d2f2b214f42c15a29cf62034975d0286920a1efb9843e8f16416b527c5552e83ba864155dbe507db11acf
+  checksum: 604012c065a3468549d44ae929e52ed2765714d0ffbde2831b9733ff37c31f1e0af83c2f75e6342ae83a1943d229b517c65871e7ff764915fcb90297ea878659
   languageName: node
   linkType: hard
 
 "@code-push/home@file:./bundles/home::locator=codeSplitPush%40workspace%3A.":
   version: 1.0.0
-  resolution: "@code-push/home@file:./bundles/home#./bundles/home::hash=e5d47c&locator=codeSplitPush%40workspace%3A."
+  resolution: "@code-push/home@file:./bundles/home#./bundles/home::hash=32e21d&locator=codeSplitPush%40workspace%3A."
   peerDependencies:
     mobx: "*"
     mobx-react-lite: "*"
     react: "*"
     react-native: "*"
     react-native-unistyles: "*"
-  checksum: fe2c903a436ad0e22f43040045cc619eba2b15adacd68d439feb97c71df557f35c79b867a839257f65c40cd2a2e1df4a4b2a72d56eaae86e2e2d0232fd4468e6
+  checksum: aba8451f20bf9c5f6ddc249ba87b16011e91caeae91b7a344ad67695c80b6f38d57bb0894982288c0828988468bf11c2ba3f7af184ba8e159f1d1135d0b96bba
   languageName: node
   linkType: hard
 
 "@code-push/profile@file:./bundles/profile::locator=codeSplitPush%40workspace%3A.":
-  version: 1.0.5
-  resolution: "@code-push/profile@file:./bundles/profile#./bundles/profile::hash=79ec8f&locator=codeSplitPush%40workspace%3A."
+  version: 1.0.7
+  resolution: "@code-push/profile@file:./bundles/profile#./bundles/profile::hash=152720&locator=codeSplitPush%40workspace%3A."
   peerDependencies:
     mobx: "*"
     mobx-react-lite: "*"
     react: "*"
     react-native: "*"
     react-native-unistyles: "*"
-  checksum: ddc8db1c74cd0f61a6d843e90a7b4cafcafeac684d0cf96ddf2d360b28faa66ed78b0af05807921f0ce8b81f4f13a185acf974f30dcba9f1ed003dfbc1adf1f7
+  checksum: f227c2872e1bf768b89c7facb8796c60df7b918516646fd65624dc8614bb39c7dec71fbb23bfb4d02ff5e126a34d1659a40365545aef2da3d7ebec2f6b3b23bf
   languageName: node
   linkType: hard
 
@@ -1582,6 +1582,17 @@ __metadata:
     react-native: "*"
     react-native-unistyles: "*"
   checksum: a3b4918061fc94969fb373362a8c142bbaf7125104581c5fd73e6da5768c9bc0e3073ab156386dffc461bc9e5daf910b8e298d4b61504f237aaaed2be1d310f2
+  languageName: node
+  linkType: hard
+
+"@code-push/shared@file:./bundles/shared::locator=codeSplitPush%40workspace%3A.":
+  version: 1.0.0
+  resolution: "@code-push/shared@file:./bundles/shared#./bundles/shared::hash=f98bff&locator=codeSplitPush%40workspace%3A."
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+    react-native-unistyles: "*"
+  checksum: 81e1b95acc865e2390b6501c1744e6449546314e9b0e64cec2ebe2fc7a0fbd0b59980e578fb92ae031f5c283eb58b70cba55567e81ff403db2f848364ec77be8
   languageName: node
   linkType: hard
 
@@ -3793,6 +3804,7 @@ __metadata:
     "@code-push/home": ./bundles/home
     "@code-push/profile": ./bundles/profile
     "@code-push/settings": ./bundles/settings
+    "@code-push/shared": ./bundles/shared
     "@react-native/babel-preset": 0.75.3
     "@react-native/eslint-config": 0.75.3
     "@react-native/metro-config": 0.75.3

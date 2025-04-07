@@ -1,0 +1,14 @@
+{
+  "name": "@code-push/shared",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-unistyles": "*"
+  },
+  "files": [
+    "src"
+  ]
+}
