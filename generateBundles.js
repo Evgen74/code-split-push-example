@@ -14,7 +14,7 @@ const metroConfigMap = {
 
 let platform = 'ios';
 let dev = false;
-let withHermes = false;
+let withHermes = true;
 let minifyParams = true;
 
 const bundlesForBuild = [];
