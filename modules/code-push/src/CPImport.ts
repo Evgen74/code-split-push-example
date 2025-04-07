@@ -33,7 +33,7 @@ export async function CPImport(name: string) {
       const fullName = `${name}_${versionCurrent}`;
       const url = `${TEMP_HOST}/dist/${fullName}.zip`;
       await RNFS.mkdir(TEMP_DIR_TO_UNZIP);
-      await await downloadFile({
+      await downloadFile({
         fromUrl: url,
         toFile: `${TEMP_DIR_TO_UNZIP}/${fullName}.zip`,
       }).promise;
